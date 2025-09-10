@@ -1,0 +1,192 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A. Nishanthini | Portfolio</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color:#fff;
+      background:#0d1117;
+      line-height:1.6;
+    }
+    nav {
+      position:fixed; top:0; left:0; width:100%;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:15px 50px; background: rgba(0,0,0,0.8); z-index:100;
+    }
+    nav .logo { font-size:1.8em; font-weight:bold; color:#00ff99; }
+    nav a { color:#fff; text-decoration:none; margin-left:25px; font-weight:bold; transition:0.3s; }
+    nav a:hover { color:#00ff99; }
+
+    section {
+      min-height:100vh;
+      display:flex; flex-direction:column;
+      justify-content:center; align-items:center;
+      text-align:center; padding:60px 20px;
+      background-size:cover; background-position:center;
+      position:relative;
+    }
+    section::before {
+      content:""; position:absolute; top:0; left:0;
+      width:100%; height:100%;
+      background:rgba(0,0,0,0.6); z-index:0;
+    }
+    section > div { position:relative; z-index:1; max-width:900px; }
+
+    h1,h2 {
+      color:#00ff99;
+      text-shadow:0 0 10px #00ff99,0 0 20px #00ff99;
+      margin-bottom:20px;
+    }
+    p { color:#ddd; font-size:1.1em; }
+
+    .grid { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; margin-top:20px; }
+    .card {
+      background:rgba(255,255,255,0.05);
+      border:1px solid #00ff99;
+      border-radius:12px;
+      padding:20px; width:200px;
+      transition:0.3s;
+    }
+    .card:hover { transform:scale(1.05); background:rgba(0,255,153,0.1); }
+    .card img { width:60px; height:60px; margin-bottom:10px; }
+
+    .profile-pic {
+      width:150px; height:150px;
+      border-radius:50%; border:3px solid #00ff99;
+      margin-bottom:20px;
+    }
+
+    form { display:flex; flex-direction:column; width:300px; margin:auto; }
+    input, textarea {
+      margin:10px 0; padding:10px;
+      border-radius:5px; border:none; background:#111; color:#fff;
+    }
+    button {
+      padding:10px; background:#00ff99; border:none;
+      border-radius:5px; cursor:pointer; font-weight:bold;
+    }
+    button:hover { background:#00cc7a; }
+
+    a { color:#00ff99; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    .resume-btn {
+      display:inline-block; margin-top:15px;
+      padding:10px 20px;
+      background:#00ff99; color:#000;
+      font-weight:bold; border-radius:5px;
+      text-decoration:none;
+    }
+    .resume-btn:hover { background:#00cc7a; color:#fff; }
+
+    @media(max-width:768px){
+      nav { flex-direction:column; padding:15px; }
+      nav a { margin:10px 0; }
+      .grid { flex-direction:column; align-items:center; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">Nishanthini</div>
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#internship">Internship</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<!-- Home -->
+<section id="home" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <img src="myphoto.jpg" alt="Nishanthini" class="profile-pic">
+    <h1>A. Nishanthini</h1>
+    <p>Aspiring AI/ML Engineer</p>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" style="background-image:url('https://images.unsplash.com/photo-1581091215367-59ab6f0c1b8e?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <h2>About Me</h2>
+    <p>I am currently pursuing <b>B.Sc. Computer Science (2nd Year)</b> at <b>Madras University</b>. 
+    Passionate about Artificial Intelligence, Machine Learning, and Web Development. 
+    I enjoy solving problems, creating digital solutions, and building real-world projects.</p>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" style="background-image:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <h2>Skills</h2>
+    <div class="grid">
+      <div class="card"><span>Python</span></div>
+      <div class="card"><span>Java</span></div>
+      <div class="card"><span>HTML</span></div>
+      <div class="card"><span>CSS</span></div>
+      <div class="card"><span>JavaScript</span></div>
+      <div class="card"><span>React</span></div>
+      <div class="card"><span>AI</span></div>
+      <div class="card"><span>ML</span></div>
+      <div class="card"><span>Web Development</span></div>
+      <div class="card"><span>Data Analysis & Visualization</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" style="background-image:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card"><span>Digital Portfolio</span></div>
+      <div class="card"><span>Website Development</span></div>
+      <div class="card"><span>Data Analysis & Visualization</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates -->
+<section id="certificates" style="background-image:url('https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <h2>Certificates</h2>
+    <div class="grid">
+      <div class="card"><span>Python Course Certificate</span></div>
+      <div class="card"><span>IBM Web Development Certificate</span></div>
+      <div class="card"><span>HTML, CSS, JavaScript Certificates</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Internship -->
+<section id="internship" style="background-image:url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <h2>Internship</h2>
+    <p>I successfully completed an internship at <b>RD INFRO TECHNO</b>, where I gained valuable experience in professional project development and teamwork.</p>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1920&q=1080');">
+  <div>
+    <h2>Contact Me</h2>
+    <p>📧 Email: <a href="mailto:nishanthinia98@gmail.com">nishanthinia98@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/nishanthini-a-366610372" target="_blank">My LinkedIn</a></p>
+    <p>🐱 GitHub: <a href="https://github.com/nishanthini-gif" target="_blank">github.com/nishanthini-gif</a></p>
+    <a href="resume.pdf" class="resume-btn" download>Download Resume</a>
+  </div>
+</section>
+
+</body>
+</html>
